@@ -1,0 +1,3 @@
+/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/CMakeFiles/lists_angelicasanchezbarreto.dir

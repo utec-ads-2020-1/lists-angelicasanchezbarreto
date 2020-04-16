@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lists_angelicasanchezbarreto.dir/mock/mocker.cpp.o CMakeFiles/lists_angelicasanchezbarreto.dir/test/tester.cpp.o CMakeFiles/lists_angelicasanchezbarreto.dir/main.cpp.o  -o lists_angelicasanchezbarreto 

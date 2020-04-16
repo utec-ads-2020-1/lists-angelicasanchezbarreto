@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lists_angelicasanchezbarreto"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lists_angelicasanchezbarreto">
+				<Option output="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/lists_angelicasanchezbarreto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/mock"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/iterators"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/test"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 lists_angelicasanchezbarreto"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lists_angelicasanchezbarreto/fast">
+				<Option output="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/lists_angelicasanchezbarreto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/mock"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/iterators"/>
+					<Add directory="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/test"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 lists_angelicasanchezbarreto/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/main.cpp">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/mock/mocker.cpp">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/mock/mocker.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/circular.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/forward.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/iterators/bidirectional_iterator.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/iterators/forward_iterator.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/linked.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/list.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/lists/node.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/queue.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/structures/stack.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/test/tester.cpp">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/test/tester.h">
+			<Option target="lists_angelicasanchezbarreto"/>
+		</Unit>
+		<Unit filename="/home/lica-pc/CLionProjects/ALGORITMOS/git/lists-angelicasanchezbarreto/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

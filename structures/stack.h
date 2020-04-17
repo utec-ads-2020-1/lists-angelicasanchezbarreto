@@ -17,12 +17,6 @@ public:
     {}
 };
 
-class CapacidadExcedida: public runtime_error {
-public:
-    CapacidadExcedida(const char *msg) : runtime_error( msg )
-    {}
-};
-
 
 template <typename T>
 class stack {
@@ -35,12 +29,24 @@ public:
     ~stack();
 
     void push(T dato);
-    int pop();
+    void pop();
     int top();
 
     int size();
     bool empty();
+
+    void replace(T* nuevo);
+
 };
+
+template <typename T>
+void stack<T>::replace(T *nuevo) {
+    for(int i=0; i<size(); i++){
+        nuevo[i] = data[i];
+    }
+    data = nuevo;
+}
+
 
 template <typename T>
 stack<T>::stack(int size) {
@@ -51,28 +57,25 @@ stack<T>::stack(int size) {
 
 template <typename T>
 void stack<T>::push(T dato){
-    try{
-        if (pos_top >= capacity - 1)
-            throw CapacidadExcedida("Excede la capacidad");
-        else {
-            data[pos_top + 1] = dato;
-            pos_top++;
-        }
+    if (pos_top >= capacity - 1) {
+        capacity *= 2;
+        T* nuevo = new T[capacity];
+        replace(nuevo);
+        push(dato);
     }
-    catch(const CapacidadExcedida &e) {
-        cerr << "ERROR: " << e.what() << endl;
+    else {
+        data[pos_top + 1] = dato;
+        pos_top++;
     }
 }
 
 template<typename T>
-int stack<T>::pop() {
+void stack<T>::pop() {
     try {
         if (empty())
             throw ArrayVacio("No existe data");
         else {
-            int last = data[pos_top];
             pos_top--;
-            return last;
         }
     }
     catch (const ArrayVacio &e) {
@@ -97,7 +100,7 @@ int stack<T>::top() {
 
 template<typename T>
 int stack<T>::size() {
-    return capacity;
+    return pos_top+1;
 }
 
 template<typename T>

@@ -78,6 +78,7 @@ void queue<T>::pop() {
         if (empty())
             throw ArrayVacio("No existe data");
         else {
+            pos_front++;
             pos_back--;
         }
     }

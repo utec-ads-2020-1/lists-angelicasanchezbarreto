@@ -89,8 +89,7 @@ int stack<T>::top() {
         if (empty())
             throw ArrayVacio("No existe data");
         else {
-            int last = data[pos_top];
-            return last;
+            return data[pos_top];
         }
     }
     catch (const ArrayVacio &e) {

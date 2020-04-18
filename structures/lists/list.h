@@ -43,4 +43,11 @@ class List {
         virtual string name() = 0;
 };
 
+template<typename T>
+void swapData(T &temp, T &tempNext){
+    auto dato = temp;
+    temp = tempNext;
+    tempNext = dato;
+}
+
 #endif

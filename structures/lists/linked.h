@@ -11,7 +11,6 @@ template <typename T>
 class LinkedList : public List<T> {
 public:
     LinkedList() : List<T>() {}
-
     T front();
     T back();
     void push_front(T);
@@ -24,25 +23,17 @@ public:
     void clear();
     void sort();
     void reverse();
+    void merge(LinkedList<T>&);
 
-    BidirectionalIterator<T> begin();
-    BidirectionalIterator<T> end();
-
+    BidirectionalIterator<T> begin(){
+        return BidirectionalIterator<T>(this->head);
+    }
+    BidirectionalIterator<T> end(){
+        return BidirectionalIterator<T>(this->tail);
+    }
     string name() {
         return "Linked List";
     }
-
-    /**
-     * Merges x into the list by transferring all of its elements at their respective
-     * ordered positions into the container (both containers shall already be ordered).
-     *
-     * This effectively removes all the elements in x (which becomes empty), and inserts
-     * them into their ordered position within container (which expands in size by the number
-     * of elements transferred). The operation is performed without constructing nor destroying
-     * any element: they are transferred, no matter whether x is an lvalue or an rvalue,
-     * or whether the value_type supports move-construction or not.
-    */
-    void merge(LinkedList<T>&);
 };
 
 
@@ -200,6 +191,33 @@ void LinkedList<T>::clear() {
 }
 
 template<typename T>
+void LinkedList<T>::sort() {
+    try {
+        if (this->nodes == 1)
+            throw SinElementos("No se puede hacer reverse");
+        else if (empty())
+            throw SinElementos("No hay elementos");
+        else {
+            for (int i = 0; i < size() - 1; i++) {
+                auto temp = this->head;
+                auto tempNext = this->head->next;
+                while (temp->next != nullptr) {
+                    if (temp->data > tempNext->data)
+                        swapData(temp->data, tempNext->data);
+                    else {
+                        temp = temp->next;
+                        tempNext = tempNext->next;
+                    }
+                }
+            }
+        }
+    }
+    catch (SinElementos &e) {
+        cerr << "REVERSE: " << e.what() << endl;
+    }
+}
+
+template<typename T>
 void LinkedList<T>::reverse() {
     try{
         if(this->nodes == 1)
@@ -229,6 +247,20 @@ void LinkedList<T>::reverse() {
     catch (SinElementos &e) {
         cerr << "REVERSE: " << e.what() << endl;
     }
+}
+
+template<typename T>
+void LinkedList<T>::merge(LinkedList<T> &nueva) {
+    if(empty()){
+        this->head = nueva.head;
+        this->tail = nueva.tail;
+    }
+    else{
+        this->tail->next = nueva.head;
+        nueva.head->prev = this->tail;
+        this->tail = nueva.head;
+    }
+    this->nodes+=nueva.size();
 }
 
 #endif

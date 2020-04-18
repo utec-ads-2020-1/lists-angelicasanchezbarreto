@@ -6,12 +6,10 @@
 
 // TODO: Implement all methods
 
-
 template <typename T>
 class ForwardList : public List<T> {
 public:
     ForwardList() : List<T>() {}
-
     T front();
     T back();
     void push_front(T);
@@ -24,27 +22,18 @@ public:
     void clear();
     void sort();
     void reverse();
+    void merge(ForwardList<T>&);
 
-    ForwardIterator<T> begin();
-    ForwardIterator<T> end();
-
+    ForwardIterator<T> begin(){
+        return ForwardIterator<T>(this->head);
+    }
+    ForwardIterator<T> end(){
+        return ForwardIterator<T>(this->tail);
+    }
     string name() {
         return "Forward List";
     }
-
-    /**
-     * Merges x into the list by transferring all of its elements at their respective
-     * ordered positions into the container (both containers shall already be ordered).
-     *
-     * This effectively removes all the elements in x (which becomes empty), and inserts
-     * them into their ordered position within container (which expands in size by the number
-     * of elements transferred). The operation is performed without constructing nor destroying
-     * any element: they are transferred, no matter whether x is an lvalue or an rvalue,
-     * or whether the value_type supports move-construction or not.
-    */
-    void merge(ForwardList<T>&);
 };
-
 
 template<typename T>
 T ForwardList<T>::front() {
@@ -191,6 +180,33 @@ void ForwardList<T>::clear() {
 }
 
 template<typename T>
+void ForwardList<T>::sort() {
+    try {
+        if (this->nodes == 1)
+            throw SinElementos("No se puede hacer sort");
+        else if (empty())
+            throw SinElementos("No hay elementos");
+        else {
+            for (int i = 0; i < size() - 1; i++) {
+                auto temp = this->head;
+                auto tempNext = this->head->next;
+                while (temp->next != nullptr) {
+                    if (temp->data > tempNext->data)
+                        swapData(temp->data, tempNext->data);
+                    else {
+                        temp = temp->next;
+                        tempNext = tempNext->next;
+                    }
+                }
+            }
+        }
+    }
+    catch (SinElementos &e) {
+        cerr << "SORT: " << e.what() << endl;
+    }
+}
+
+template<typename T>
 void ForwardList<T>::reverse() {
     try{
         if(this->nodes == 1)
@@ -219,5 +235,17 @@ void ForwardList<T>::reverse() {
     }
 }
 
+template<typename T>
+void ForwardList<T>::merge(ForwardList<T> &nueva) {
+    if(empty()){
+        this->head = nueva.head;
+        this->tail = nueva.tail;
+    }
+    else{
+        this->tail->next = nueva.head;
+        this->tail = nueva.head;
+    }
+    this->nodes+=nueva.size();
+}
 
 #endif

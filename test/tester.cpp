@@ -1,7 +1,8 @@
 #include "tester.h"
 
 void Tester::execute() {
-    Collection collections[] = { forward_list, linked_list, circular_list };
+    //Collection collections[] = { forward_list, linked_list, circular_list };
+    Collection collections[] = { forward_list, linked_list};
     size_t numberOfCollections = sizeof(collections) / sizeof(collections[0]);
 
     for (int i = 0; i < numberOfCollections; i++) {
@@ -17,7 +18,7 @@ List<T>* Tester::getCollection(Collection collection) {
     switch (collection) {
         case forward_list: return new ForwardList<T>();
         case linked_list: return new LinkedList<T>();
-        case circular_list: return new CircularLinkedList<T>();
+        //case circular_list: return new CircularLinkedList<T>();
         default: throw invalid_argument("Not a valid collection - build");
     }
 }
@@ -27,7 +28,7 @@ void Tester::testSpecifics(Collection collection, List<T>* list) {
     switch (collection) {
         case forward_list: testForward((ForwardList<T>*) list); break;
         case linked_list: testLinked((LinkedList<T>*) list); break;
-        case circular_list: testCircularLinked((CircularLinkedList<T>*) list); break;
+        //case circular_list: testCircularLinked((CircularLinkedList<T>*) list); break;
         default: throw invalid_argument("Not a valid collection - specifics");
     }
 }

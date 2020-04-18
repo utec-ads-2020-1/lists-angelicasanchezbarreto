@@ -4,6 +4,19 @@
 #include "node.h"
 
 // TODO: Implement all methods
+
+class SinElementos: public runtime_error {
+public:
+    SinElementos(const char *msg) : runtime_error( msg )
+    {}
+};
+
+class IndiceInexistente: public out_of_range {
+public:
+    IndiceInexistente(const char *msg) : out_of_range( msg )
+    {}
+};
+
 template <typename T>
 class List {
     protected:

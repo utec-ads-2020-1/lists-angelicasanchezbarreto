@@ -7,7 +7,20 @@ struct Node {
     Node<T>* next;
     Node<T>* prev;
 
-    void killSelf();
+    Node(T elem);
+
+    Node();
+
+    //void killSelf();
 };
+
+template<typename T>
+Node<T>::Node(T elem) {
+    data = elem;
+}
+
+template<typename T>
+Node<T>::Node() {}
+
 
 #endif

@@ -77,6 +77,7 @@ void CircularLinkedList<T>::push_front(T dato) {
         this->tail->next = nuevo;
         this->head->prev = nuevo;
         nuevo->prev = this->tail;
+        this->head = nuevo;
     }
     ++this->nodes;
 }

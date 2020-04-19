@@ -13,15 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79a54c13-a437-4a3a-8bbd-50d4e35ef2ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures/lists/forward.h" beforeDir="false" afterPath="$PROJECT_DIR$/structures/lists/forward.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures/lists/iterators/bidirectional_iterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/structures/lists/iterators/bidirectional_iterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures/lists/iterators/forward_iterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/structures/lists/iterators/forward_iterator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lists_angelicasanchezbarreto" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lists_angelicasanchezbarreto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structures/lists/circular.h" beforeDir="false" afterPath="$PROJECT_DIR$/structures/lists/circular.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structures/lists/linked.h" beforeDir="false" afterPath="$PROJECT_DIR$/structures/lists/linked.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures/lists/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/structures/lists/list.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/tester.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/tester.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/tester.h" beforeDir="false" afterPath="$PROJECT_DIR$/test/tester.h" afterDir="false" />
     </list>
@@ -73,7 +67,8 @@
       <workItem from="1587039571337" duration="255000" />
       <workItem from="1587152856130" duration="5052000" />
       <workItem from="1587219618608" duration="2633000" />
-      <workItem from="1587236510374" duration="3827000" />
+      <workItem from="1587236510374" duration="4637000" />
+      <workItem from="1587270121883" duration="1003000" />
     </task>
     <servers />
   </component>
@@ -85,55 +80,55 @@
       <screen x="0" y="27" width="1500" height="973" />
     </state>
     <state x="903" y="258" width="424" height="497" key="FileChooserDialogImpl/0.27.1500.973@0.27.1500.973" timestamp="1586989366210" />
-    <state width="1454" height="249" key="GridCell.Tab.0.bottom" timestamp="1587240251619">
+    <state width="1454" height="308" key="GridCell.Tab.0.bottom" timestamp="1587241149110">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="249" key="GridCell.Tab.0.bottom/0.27.1500.973@0.27.1500.973" timestamp="1587240251619" />
-    <state width="1454" height="249" key="GridCell.Tab.0.center" timestamp="1587240251618">
+    <state width="1454" height="308" key="GridCell.Tab.0.bottom/0.27.1500.973@0.27.1500.973" timestamp="1587241149110" />
+    <state width="1454" height="308" key="GridCell.Tab.0.center" timestamp="1587241149109">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="249" key="GridCell.Tab.0.center/0.27.1500.973@0.27.1500.973" timestamp="1587240251618" />
-    <state width="1454" height="249" key="GridCell.Tab.0.left" timestamp="1587240251618">
+    <state width="1454" height="308" key="GridCell.Tab.0.center/0.27.1500.973@0.27.1500.973" timestamp="1587241149109" />
+    <state width="1454" height="308" key="GridCell.Tab.0.left" timestamp="1587241149108">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="249" key="GridCell.Tab.0.left/0.27.1500.973@0.27.1500.973" timestamp="1587240251618" />
-    <state width="1454" height="249" key="GridCell.Tab.0.right" timestamp="1587240251619">
+    <state width="1454" height="308" key="GridCell.Tab.0.left/0.27.1500.973@0.27.1500.973" timestamp="1587241149108" />
+    <state width="1454" height="308" key="GridCell.Tab.0.right" timestamp="1587241149110">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="249" key="GridCell.Tab.0.right/0.27.1500.973@0.27.1500.973" timestamp="1587240251619" />
-    <state width="1454" height="308" key="GridCell.Tab.1.bottom" timestamp="1587239182039">
+    <state width="1454" height="308" key="GridCell.Tab.0.right/0.27.1500.973@0.27.1500.973" timestamp="1587241149110" />
+    <state width="1454" height="308" key="GridCell.Tab.1.bottom" timestamp="1587241149113">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="308" key="GridCell.Tab.1.bottom/0.27.1500.973@0.27.1500.973" timestamp="1587239182039" />
-    <state width="1454" height="308" key="GridCell.Tab.1.center" timestamp="1587239182039">
+    <state width="1454" height="308" key="GridCell.Tab.1.bottom/0.27.1500.973@0.27.1500.973" timestamp="1587241149113" />
+    <state width="1454" height="308" key="GridCell.Tab.1.center" timestamp="1587241149112">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="308" key="GridCell.Tab.1.center/0.27.1500.973@0.27.1500.973" timestamp="1587239182039" />
-    <state width="1454" height="308" key="GridCell.Tab.1.left" timestamp="1587239182039">
+    <state width="1454" height="308" key="GridCell.Tab.1.center/0.27.1500.973@0.27.1500.973" timestamp="1587241149112" />
+    <state width="1454" height="308" key="GridCell.Tab.1.left" timestamp="1587241149111">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="308" key="GridCell.Tab.1.left/0.27.1500.973@0.27.1500.973" timestamp="1587239182039" />
-    <state width="1454" height="308" key="GridCell.Tab.1.right" timestamp="1587239182039">
+    <state width="1454" height="308" key="GridCell.Tab.1.left/0.27.1500.973@0.27.1500.973" timestamp="1587241149111" />
+    <state width="1454" height="308" key="GridCell.Tab.1.right" timestamp="1587241149112">
       <screen x="0" y="27" width="1500" height="973" />
     </state>
-    <state width="1454" height="308" key="GridCell.Tab.1.right/0.27.1500.973@0.27.1500.973" timestamp="1587239182039" />
+    <state width="1454" height="308" key="GridCell.Tab.1.right/0.27.1500.973@0.27.1500.973" timestamp="1587241149112" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test/tester.cpp</url>
-          <line>26</line>
+          <line>25</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test/tester.cpp</url>
-          <line>16</line>
+          <line>15</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test/tester.cpp</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>

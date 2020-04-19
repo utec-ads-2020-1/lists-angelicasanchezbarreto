@@ -27,8 +27,7 @@ using namespace std;
 
 #define NUMBER_OF_TESTS 10
 
-//enum Collection { forward_list, linked_list, circular_list };
-enum Collection { forward_list, linked_list};
+enum Collection { forward_list, linked_list, circular_list };
 
 class Tester {
     private:

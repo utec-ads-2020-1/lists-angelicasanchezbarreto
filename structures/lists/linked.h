@@ -258,7 +258,7 @@ void LinkedList<T>::merge(LinkedList<T> &nueva) {
     else{
         this->tail->next = nueva.head;
         nueva.head->prev = this->tail;
-        this->tail = nueva.head;
+        this->tail = nueva.tail;
     }
     this->nodes+=nueva.size();
 }

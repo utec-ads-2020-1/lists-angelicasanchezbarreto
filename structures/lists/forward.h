@@ -37,31 +37,18 @@ public:
 
 template<typename T>
 T ForwardList<T>::front() {
-    try{
-        if(empty())
-            throw SinElementos("No hay elementos");
-        else
-            return this->head->data;
-    }
-    catch(const SinElementos &e){
-        cerr << "FRONT: " << e.what() << endl;
-    }
-    return -1;
+    if(empty())
+        throw SinElementos("FRONT: No hay elementos");
+    else
+        return this->head->data;
 }
 
 template<typename T>
 T ForwardList<T>::back() {
-    try {
-        if (empty())
-            throw SinElementos("No hay elementos");
-        else {
-            return this->tail->data;
-        }
-    }
-    catch(const SinElementos &e){
-        cerr << "BACK: " << e.what() << endl;
-    }
-    return -1;
+    if (empty())
+        throw SinElementos("BACK: No hay elementos");
+    else
+        return this->tail->data;
 }
 
 template<typename T>
@@ -92,60 +79,44 @@ void ForwardList<T>::push_back(T dato) {
 
 template<typename T>
 void ForwardList<T>::pop_front() {
-    try{
-        if(empty())
-            throw SinElementos("No hay elementos");
-        else{
-            auto temp = new Node<T>;
-            temp = this->head;
-            this->head = this->head->next;
-            delete temp;
-            --this->nodes;
-        }
-    }
-    catch(const SinElementos &e){
-        cerr << "POP_FRONT: " << e.what() << endl;
+    if(empty())
+        throw SinElementos("POP_FRONT: No hay elementos");
+    else{
+        auto temp = new Node<T>;
+        temp = this->head;
+        this->head = this->head->next;
+        delete temp;
+        --this->nodes;
     }
 }
 
 template<typename T>
 void ForwardList<T>::pop_back() {
-    try{
-        if(empty())
-            throw SinElementos("No hay elementos");
-        else{
-            auto temp = new Node<T>;
-            temp = this->head;
-            while(temp->next!= this->tail)
-                temp = temp->next;
-            this->tail = temp;
+    if(empty())
+        throw SinElementos("POP_BACK: No hay elementos");
+    else{
+        auto temp = new Node<T>;
+        temp = this->head;
+        while(temp->next!= this->tail)
             temp = temp->next;
-            this->tail->next = nullptr;
-            delete temp;
-            --this->nodes;
-        }
-    }
-    catch(const SinElementos &e){
-        cerr << "POP_BACK: " << e.what() << endl;
+        this->tail = temp;
+        temp = temp->next;
+        this->tail->next = nullptr;
+        delete temp;
+        --this->nodes;
     }
 }
 
 template<typename T>
 T ForwardList<T>::operator[](int pos) {
-    try {
-        if (pos > size()-1 || pos < 0)
-            throw IndiceInexistente("El indice no existe");
-        else {
-            auto temp = this->head;
-            for(int i=0; i<pos;i++)
-                temp = temp->next;
-            return temp->data;
-        }
+    if (pos > size()-1 || pos < 0)
+        throw IndiceInexistente("ERROR: El indice no existe");
+    else {
+        auto temp = this->head;
+        for(int i=0; i<pos;i++)
+            temp = temp->next;
+        return temp->data;
     }
-    catch(const IndiceInexistente &e){
-        cerr << "ERROR: " << e.what() << endl;
-    }
-    return -1;
 }
 
 template<typename T>
@@ -160,78 +131,63 @@ int ForwardList<T>::size() {
 
 template<typename T>
 void ForwardList<T>::clear() {
-    try {
-        if (empty())
-            throw SinElementos("No hay elementos");
-        else {
-            auto temp = new Node<T>;
-            while(this->nodes!=0){
-                temp = this->head;
-                this->head = temp->next;
-                delete temp;
-                --this->nodes;
-            }
-            this->tail = nullptr;
+    if (empty())
+        throw SinElementos("CLEAR: No hay elementos");
+    else {
+        auto temp = new Node<T>;
+        while(this->nodes!=0){
+            temp = this->head;
+            this->head = temp->next;
+            delete temp;
+            --this->nodes;
         }
-    }
-    catch(const SinElementos &e){
-        cerr << "CLEAR: " << e.what() << endl;
+        this->tail = nullptr;
     }
 }
 
 template<typename T>
 void ForwardList<T>::sort() {
-    try {
-        if (this->nodes == 1)
-            throw SinElementos("No se puede hacer sort");
-        else if (empty())
-            throw SinElementos("No hay elementos");
-        else {
-            for (int i = 0; i < size() - 1; i++) {
-                auto temp = this->head;
-                auto tempNext = this->head->next;
-                while (temp->next != nullptr) {
-                    if (temp->data > tempNext->data)
-                        swapData(temp->data, tempNext->data);
-                    else {
-                        temp = temp->next;
-                        tempNext = tempNext->next;
-                    }
+    if (this->nodes == 1)
+        throw SinElementos("SORT: No se puede hacer sort");
+    else if (empty())
+        throw SinElementos("SORT: No hay elementos");
+    else {
+        for (int i = 0; i < size() - 1; i++) {
+            auto temp = this->head;
+            auto tempNext = this->head->next;
+            while (temp->next != nullptr) {
+                if (temp->data > tempNext->data)
+                    swapData(temp->data, tempNext->data);
+                else {
+                    temp = temp->next;
+                    tempNext = tempNext->next;
                 }
             }
         }
-    }
-    catch (SinElementos &e) {
-        cerr << "SORT: " << e.what() << endl;
     }
 }
 
 template<typename T>
 void ForwardList<T>::reverse() {
-    try{
-        if(this->nodes == 1)
-            throw SinElementos("No se puede hacer reverse");
-        else if(empty())
-            throw SinElementos("No hay elementos");
-        else{
-            auto tailAux = this->tail;
-            this->tail = this->head;
-            this->head = tailAux;
+    if(this->nodes == 1)
+        throw SinElementos("REVERSE: No se puede hacer reverse");
+    else if(empty())
+        throw SinElementos("REVERSE: No hay elementos");
+    else{
+        auto tailAux = this->tail;
+        this->tail = this->head;
+        this->head = tailAux;
 
-            auto temp = this->head;
+        auto temp = this->head;
 
-            while(temp!= this->tail){
-                auto aux = this->tail;
-                while(aux->next != temp){
-                    aux = aux->next;
-                }
-                temp->next = aux;
-                temp = aux;
+        while(temp!= this->tail){
+            auto aux = this->tail;
+            while(aux->next != temp){
+                aux = aux->next;
             }
+            temp->next = aux;
+            temp = aux;
         }
-    }
-    catch (SinElementos &e) {
-        cerr << "REVERSE: " << e.what() << endl;
     }
 }
 
@@ -241,6 +197,8 @@ void ForwardList<T>::merge(ForwardList<T> &nueva) {
         this->head = nueva.head;
         this->tail = nueva.tail;
     }
+    else if(nueva.empty())
+        throw SinElementos("MERGE: La nueva lista esta vacía");
     else{
         this->tail->next = nueva.head;
         this->tail = nueva.head;

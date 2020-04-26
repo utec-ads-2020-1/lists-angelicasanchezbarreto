@@ -44,6 +44,18 @@ class List {
 };
 
 template<typename T>
+List<T>::~List() {
+    auto temp = new Node<T>;
+    while(this->nodes!=0){
+        temp = this->head;
+        this->head = temp->next;
+        delete temp;
+        --this->nodes;
+    }
+    this->tail = nullptr;
+}
+
+template<typename T>
 void swapData(T &temp, T &tempNext){
     auto dato = temp;
     temp = tempNext;

@@ -10,8 +10,8 @@ class BidirectionalIterator {
         Node<T> *current;
 
     public:
-        BidirectionalIterator(){};
-        BidirectionalIterator(Node<T>*);
+        BidirectionalIterator(){}; 
+        BidirectionalIterator(Node<T>*); // Usa explicit para ver posibles errores
         BidirectionalIterator<T> operator=(BidirectionalIterator<T>);
         bool operator!=(BidirectionalIterator<T>);
         BidirectionalIterator<T> operator++();
@@ -26,7 +26,7 @@ BidirectionalIterator<T>::BidirectionalIterator(Node<T> *data) {
 
 template<typename T>
 BidirectionalIterator<T> BidirectionalIterator<T>::operator=(BidirectionalIterator<T> it) {
-    it = current;
+    it = current;// Esto sería al revés 
     return it;
 }
 
@@ -37,18 +37,19 @@ bool BidirectionalIterator<T>::operator!=(BidirectionalIterator<T> it) {
 
 template<typename T>
 BidirectionalIterator<T> BidirectionalIterator<T>::operator++() {
-    current = current->next;
+    current = current->next; // Estás construyendo nuevos iteradores
     return current;
 }
 
 template<typename T>
 BidirectionalIterator<T> BidirectionalIterator<T>::operator--() {
-    current = current->prev;
+    current = current->prev; // Estás construyendo nuevos iteradores
     return current;
 }
 
 template<typename T>
 T BidirectionalIterator<T>::operator*() {
+    // Si current es null?
     return current->data;
 }
 

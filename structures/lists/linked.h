@@ -29,7 +29,7 @@ public:
         return BidirectionalIterator<T>(this->head);
     }
     BidirectionalIterator<T> end(){
-        return BidirectionalIterator<T>(this->tail);
+        return BidirectionalIterator<T>(this->tail); // Siguiente de tail
     }
     string name() {
         return "Linked List";
